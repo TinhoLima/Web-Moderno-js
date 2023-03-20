@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <div>
+        <a href="https://google.com.br" target="_blank">Google</a>
+        <!-- <a espera-um-pouco href="https://google.com.br">Google</a> -->
+            <!-- onclick="navegarEm5s(event)" -> Dentro da função, o (event) é obrigatorio como parâmetro. Não podemos usar outro nome -->
+    </div>
+    <script>
+        //  Após clicar no link, somente após 5 segundos ele vai direcionar pro link clicado.
+        let tempo = prompt('Informe o tempo de espera (1000 = 1 segundo)')
+        function navegarEm5s(e) {
+            e.preventDefault() // -> Isso faz com o que o comportamen to padrão não aconteça! Só assim podemos então modificar da forma que acharmos melhor.
+            console.log(`Saindo em ${tempo} segundos...`)
+            setTimeout(() => {
+                const link = e.target
+                window.location.href = link.href
+            }, tempo)
+        }
+        
+        const a = document.querySelector('a')
+        a.onclick = navegarEm5s
+
+
+        // Metodo escolhido pelo professor. (tbm podemos fazer usando classe, id, etc)
+        // const a = document.querySelector('[espera-um-pouco]')
+        // a.onclick = navegarEm5s
+    </script>
+</body>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #01</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="conteudo exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro ultimo">.terceiro .ultimo</div>
+    <script>              
+        document.getElementById('primeiro').classList.add('destaque')
+
+        const divs = document.getElementsByTagName('div')
+
+        // percorrendo o array divs, tirando de qualquer um, o efeito 'destaque'.
+        Array.from(divs).forEach(e => e.classList.remove('destaque'))
+
+        // uma forma melhor para armazenar o array das divs?
+        const divsArray = [...divs]
+        divsArray.forEach(e => e.classList.add('destaque'))
+
+        const ultimosElementos = document.getElementsByClassName('ultimo')
+        // ultimosElementos.classList.remove('destaque') - (meu teste q fiz)essa ação não funciona, porq ela é um array, e para mudar elementos de um array dessa forma se utiliza forEach por exemplo...
+        for(let e of ultimosElementos) {
+            e.classList.remove('destaque')
+        }
+    </script>
+</body>
+</html>

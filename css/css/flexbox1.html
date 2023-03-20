@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox #01</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+        .big {
+            font-size: 1.5em;        
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column; /*transforma em coluna*/
+            flex-direction: colum-reverse; /*transforma em coluna inversa*/
+            flex-direction: row-reverse; /*transforma em linha reversa*/
+            flex-direction: row; /*padrão normal da propriedade "linha"*/
+            width: 50%;
+            flex-wrap: wrap; /* quebra a linha caso o tamanho da width não seja o suficiente*/
+            flex-wrap: wrap-reverse;
+
+            /* flex-flow, é uma mistura de flex-direction com flex-wrap */
+            flex-flow: row wrap;
+            height: 200px;
+            flex-flow: column-reverse wrap;
+            flex-flow: column wrap;
+            flex-flow: row wrap;
+
+            justify-content: flex-start;
+            justify-content: flex-end;
+            /* colocando os flexs no começo, final ou centro */
+            justify-content: center;
+            justify-content: space-around;
+            /* flex-direction: row-reverse; */
+            justify-content: space-between;
+
+            /* Cross Axis */
+            height: 400px;
+            align-items: stretch; /*Padrão*/
+            align-items: baseline; /* alinha em retidão com a fonte do texto, se vc reparar o nº 3 está alinhado com os demais numeros.*/
+            align-items: flex-start; /* usa os itens de cima para alinhar com o top*/
+            align-items: flex-end; /* usa os itens de baixo para alinhar com o bottom*/
+            align-items: center; /*de fato deixando tudo no centro.*/
+
+            /* Mais de uma linha */
+            align-content:  flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-around;
+            align-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container tag nolabel">
+        <div class="tag nolabel">1</div>
+        <div class="tag nolabel">2</div>
+        <div class="tag nolabel big">3</div>
+        <div class="tag nolabel">4</div>
+        <div class="tag nolabel">5</div>
+        <div class="tag nolabel">6</div>
+        <div class="tag nolabel">7</div>
+        <div class="tag nolabel">8</div>
+        <div class="tag nolabel">9</div>
+        <div class="tag nolabel">10</div>
+    </div>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>

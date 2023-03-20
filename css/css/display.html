@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 40px;
+            color: #fff;
+            background-color: coral;
+        }
+
+        ul { padding: 0;}
+
+        div { background-color: seagreen;}
+
+        span {background-color: dodgerblue;}
+
+        li { background-color: purple;}
+
+        div, span, li {
+            width: 50%;
+            width: 200px;
+            height: 80px;
+            padding-top: 30px;
+            text-align: center;
+
+            display: block;
+            /* significa que cada elemento vai ter sua linha, ou seja ele faz a quebra de linha. 
+            OBS: 
+            a altura e a largura agora sim serão consideradas para todo elemento que esteja relacionado.*/
+
+            display: inline;
+            /* ficam todos na mesma linha 
+            OBS: 
+            a altura e a largura não serão considerados.*/
+
+            display: inline-block;
+            /* Ele vai manter os elementos na mesma linha tbm, porém irá considerar a altura e a largura. */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>Texto 1</div>
+    <span>Texto 2</span>
+    <span>Texto 3</span>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+    "files": [
+        "src/**/*.ts"
+    ],
+    "compilerOptions": {
+        "rootDir": "src",
+        "noImplicitAny": true, // modificar para false, torna seu código mais compativel caso esteja ocorrendo algum erro relacionado a tipagem.
+        "target": "es5"
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Modificando HTML #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <script>
+        const body = document.querySelector('body') 
+
+        const div1 = document.createElement('div') // Criando elemento no HTML
+        div1.classList.add('destaque') // adicionando uma classe dentro da div1 (estilo css aplicado)
+        div1.innerHTML = 'Primeiro' // conteúdo da minha div
+
+        const div2 = document.createElement('div') // Criando elemento HTML
+        div2.setAttribute('wm-atributo', 'valor') // Criando atriburo pra minha div
+        div2.innerHTML = 'Segundo' // conteúdo da minha div
+
+        const p = document.createElement('p')
+        p.innerHTML = 'Terceiro'
+
+        const div3 = document.createElement('div')
+        // appendChild - você pode colocar elementos dentro de oum outro elemento HTML para que de fato ele faça parte da DOM. Coloca um elemento no final dos filhos daquele elemento no qual estamos adicionamos.
+        
+        div3.appendChild(p)
+
+        body.appendChild(div1) // Adicionando os elementos 
+        body.appendChild(div2)
+        body.appendChild(div3)
+
+        const texto = document.createTextNode('Antes...')
+        div3.insertBefore(texto, div3.childNodes[0])
+
+        const div4 = div3.cloneNode(true) // Clonando a div3
+        body.appendChild(div4)
+        body.removeChild(div3)
+    </script>
+</body>
+
+</html>
