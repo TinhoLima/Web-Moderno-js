@@ -1,4 +1,4 @@
-# Desenvolvimento web moderno com Javascript
+# Desenvolvimento web moderno com javascript.
 cod3r.com
 
 Temas abordados no curso: 
