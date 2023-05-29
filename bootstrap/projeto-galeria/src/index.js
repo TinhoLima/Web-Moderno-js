@@ -6,4 +6,4 @@ import 'jquery'
 import 'bootstrap'
 
 // Meus aquivos JS
-import './js/core/includes'
+import './js/core/includes.js'
