@@ -1,6 +1,7 @@
 const pilotos = ['Vettel', 'Alonso', 'Raikkonen', 'Massa']
-pilotos.pop() // massa quebrou o carro --------------------> pop() remove o último elemento.
-console.log(pilotos)
+// pilotos.pop() 
+// massa quebrou o carro --------------------> pop() remove o último elemento.
+console.log(pilotos.pop())
 
 pilotos.push('Verstappen')
 console.log(pilotos)
