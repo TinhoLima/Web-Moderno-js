@@ -1,11 +1,24 @@
 {
-    "users": [{
-        "id": 1,
-        "name": "Alison Coutinho",
-        "email": "reidelas@tinho.com"
-    }, {
-        "id": 2,
-        "name": "Maria Julia da Silva",
-        "email": "mjds@empresa.com"
-    }]
+  "users": [
+    {
+      "id": 1,
+      "name": "Alison Coutinho",
+      "email": "reidelas@tinho.com"
+    },
+    {
+      "id": 2,
+      "name": "Maria Julia da Silva",
+      "email": "mjds@empresa.com"
+    },
+    {
+      "name": "Alison",
+      "email": "alison@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "teste silva",
+      "email": "silva.teste.com.br",
+      "id": 4
+    }
+  ]
 }
