@@ -3,18 +3,6 @@ footer.footer {
     align-items: center;
     justify-content: flex-end;
     padding: 0 25px;
-    background-color: #fff;
+    background-color: white;
     box-shadow: var(--shadow);
-}
-
-footer button {
-    background-color: rgb(89, 92, 110);
-    color: white;
-    border-radius: 15px;
-    margin-right: 10px;
-    box-shadow: var(--shadow);
-}
-
-footer button:hover {
-    background-color: rgb(54, 56, 66);
 }
