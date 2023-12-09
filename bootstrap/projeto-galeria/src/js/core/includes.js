@@ -1,7 +1,7 @@
 import $ from 'jquery'
 
+// se o parent não for encontrado, busque no corpo todo.
 function loadIncludes(parent) {
-    // se o parent não for encontrado, busque no corpo todo.
     if (!parent) parent = 'body'
     $(parent).find('[wm-include]').each(function(i, e) {
         const url = $(e).attr('wm-include')
