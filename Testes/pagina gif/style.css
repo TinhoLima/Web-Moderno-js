@@ -5,22 +5,22 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.banner-text{
+.navbar{
     width: 100%;
     position: absolute;
 }
-.banner-text ul{
+.navbar ul{
     height: 50px;
     float: right;
 }
-.banner-text ul li{
+.navbar ul li{
     display: inline-block;
     padding: 40px 15px;
     text-transform: uppercase;
     color: #fff;
     font-size: 20px;   
 }
-.banner-text h2{
+.navbar h2{
     text-align: center;
     color: #fff;
     font-size: 50px;
