@@ -1,5 +1,7 @@
 .roxo {
-    height: 100vh;
     background-color: blueviolet;
     color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
 }
