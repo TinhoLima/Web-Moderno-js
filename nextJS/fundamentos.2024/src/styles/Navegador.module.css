@@ -3,4 +3,10 @@
     padding: 30px;
     margin: 10px;
     border-radius: 8px;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.navegador:hover {
+    filter: brightness(1.1);
 }

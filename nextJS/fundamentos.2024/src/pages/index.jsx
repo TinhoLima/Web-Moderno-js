@@ -10,9 +10,12 @@ export default function Home() {
             height: '100vh',
             flexWrap: 'wrap'
         }}>
-            <Navegador texto="Estiloso" destino="/estiloso"/>
-            <Navegador texto="App" destino="/app"/>
+            <Navegador texto="Estiloso" destino="/estiloso" cor="crimson"/>
+            <Navegador texto="App" destino="/app" cor="cadetblue"/>
             <Navegador texto="Jsx" destino="/jsx"/>
+            <Navegador texto="Navegação #01" destino="/navegacao" cor="green"/>
+            <Navegador texto="Navegação #02" destino="/cliente/RJ-1/10" cor="coral"/>
+            <Navegador texto="Componente com estado" destino="/estado"/>
         </div>
     )
 }
